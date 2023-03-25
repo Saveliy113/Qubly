@@ -58,6 +58,11 @@
               <img src="img/Logo.svg" alt="Qubly Logo" />
             </a>
             <div class="right_side_header">
+              <div class="mobile_menu" id="mobile_menu-1">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+              </div>
               <ul class="mnu_top">
                 <li class="has_sub_menu">
                   <a href="#">About</a>
@@ -70,7 +75,7 @@
                 </li>
                 <li><a href="#">Pricing</a></li>
                 <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Login</a></li>
+                <li><a href="#pre_footer" class="yakor">Login</a></li>
               </ul>
               <a href="#" class="btn_simple">Get Started</a>
             </div>
@@ -81,7 +86,10 @@
       <div class="main_banner">
         <div class="container">
           <div class="row">
-            <div class="col-lg-6">
+            <div
+              class="col-lg-6 col-md-7 order-lg-1 order-2 wow fadeInLeft"
+              data-wow-duration="1s"
+            >
               <div class="mb__info">
                 <div class="notif">
                   <img
@@ -101,11 +109,14 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-6">
+            <div
+              class="col-lg-6 col-md-5 order-lg-2 order-1 wow fadeInRight"
+              data-wow-duration="1s"
+            >
               <img
                 src="img/main_banner/image_mb.png"
                 alt="banner image"
-                class="img-responsive"
+                class="animate_graphic img-responsive"
               />
             </div>
           </div>
@@ -114,7 +125,7 @@
     </section>
 
     <section id="advantages">
-      <div class="container">
+      <div class="container wow fadeIn" data-wow-duration="2s">
         <div class="notif">
           <img src="img/adavantages/why_icon.svg" alt="update_icon" />
           <p>Why Qubly</p>
@@ -127,8 +138,8 @@
             erat, sed diam voluptua.
           </div>
         </div>
-        <div class="row row_adv">
-          <div class="col-lg-4">
+        <div class="row row_adv justify-content-center">
+          <div class="col-md-4 col-sm-6">
             <div class="item_adv">
               <img src="img/adavantages/icon_2.svg" alt="" />
               <div class="heading">Powerful Algorithms</div>
@@ -138,7 +149,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-md-4 col-sm-6">
             <div class="item_adv">
               <img src="img/adavantages/icon_3.svg" alt="" />
               <div class="heading">Valuable business insights</div>
@@ -148,7 +159,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-md-4 col-sm-6">
             <div class="item_adv">
               <img src="img/adavantages/icon_1.svg" alt="" />
               <div class="heading">Data in real-time</div>
@@ -165,10 +176,14 @@
     <section class="information" id="info_1">
       <div class="container">
         <div class="row d-flex align-items-center">
-          <div class="col-lg-6">
-            <img src="img/information/info_img_1.svg" alt="" />
+          <div class="col-lg-6 col-md-4 wow fadeInLeft" data-wow-duration="1s">
+            <img
+              src="img/information/info_img_1.svg"
+              alt=""
+              class="img-responsive"
+            />
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6 col-md-8 wow fadeInRight" data-wow-duration="1s">
             <div class="right_info">
               <div class="notif">
                 <img src="img/information/icon_notif_1.svg" alt="update_icon" />
@@ -189,7 +204,7 @@
     <section class="information" id="info_2">
       <div class="container">
         <div class="row d-flex align-items-center">
-          <div class="col-lg-6">
+          <div class="col-lg-6 col-md-8 wow fadeInLeft" data-wow-duration="1s">
             <div class="right_info">
               <div class="notif">
                 <img src="img/information/icon_notif_2.svg" alt="update_icon" />
@@ -203,15 +218,15 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6">
-            <img src="img/information/info_img_2.png" alt="" />
+          <div class="col-lg-6 col-md-4 wow fadeInRight" data-wow-duration="1s">
+            <img src="img/information/info_img_2.png" alt="Data Pipelines" />
           </div>
         </div>
       </div>
     </section>
 
     <section id="reviews">
-      <div class="container">
+      <div class="container wow fadeIn" data-wow-duration="2s">
         <div id="rev_1" class="item_rev active">
           <div class="quotes">
             "What I love about Qubly is the easy way we can collaborate even if
@@ -281,7 +296,7 @@
     <section id="pre_footer">
       <div class="container">
         <div class="row d-flex align-items-center">
-          <div class="col-lg-6">
+          <div class="col-lg-6 wow fadeInLeft" data-wow-duration="1s">
             <div class="pf_info">
               <h4>
                 See why the world’s best companies use Qubly to become truly
@@ -295,7 +310,7 @@
               />
             </div>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6 wow fadeInRight" data-wow-duration="1s">
             <div class="form_wrapper">
               <form>
                 <h4>Sign Up</h4>

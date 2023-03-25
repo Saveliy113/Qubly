@@ -1,7 +1,9 @@
 $(function () {
   new WOW().init();
 
-  $('.hamburger').click(function () {
+  /*--------HAMBURGER MENU--------*/
+
+  $('.mobile_menu').click(function () {
     $(this).toggleClass('is-active');
 
     if ($(this).hasClass('is-active')) {
@@ -10,6 +12,8 @@ $(function () {
       $('.mnu_top').slideUp(300);
     }
   });
+
+  /*----------------------------*/
 
   /*--------REVIEWS TABS--------*/
 
@@ -21,6 +25,32 @@ $(function () {
 
     $('.item_rev').not(revId).removeClass('active');
     $(revId).addClass('active');
+  });
+
+  /*----------------------------*/
+
+  /*--------REVIEWS TABS--------*/
+
+  
+
+  $('a.yakor').on('click', function (event) {
+    var $anchor = $(this);
+    console.log($anchor.offset().top)
+    $('html, body')
+      .stop()
+      .animate(
+        {
+          scrollTop: $($anchor.attr('href')).offset().top - 57,
+        },
+        {
+          duration: 2000,
+          specialEasing: {
+            width: 'linear',
+            height: 'easeInOutCubic',
+          },
+        }
+      );
+    event.preventDefault();
   });
 
   /*----------------------------*/

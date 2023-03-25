@@ -123,12 +123,55 @@ b.heading
 	display: block
 	color: $dark-accent
 	margin-bottom: 8px
-	font-style: 18px
+	font-size: 18px
 	font-weight: 900
 
 /*---------------------------------------*/
 
+/*--------------ANIMATIONS--------------*/
 
+@keyframes opac
+	0%
+		opacity: 0
+	100%
+		opacity: 1
+
+@keyframes movingAn
+	0%
+		transform: translateX(0)
+	100%
+		transform: translateX(10px)
+
+/*---------------------------------------*/
+
+/*--------------TEMPLATE ELEMENTS--------------*/
+
+.notif
+	max-width: max-content
+	display: flex
+	background-color: $light_accent
+	border-radius: 30px
+	padding: 10px 25px 
+	align-items: center
+	img
+		width: 16px
+		height: auto
+		margin-right: 7px
+	p
+		color: $accent
+	a
+		text-decoration: none
+		color: $accent
+		border-bottom: 1px solid $accent
+		transition: all .4s ease 
+		&:hover
+			color: darken($accent, 10%)
+			border-color: darken($accent, 10%)
+
+/*---------------------------------------*/
+
+
+//------------------------HEADER----------------------------//
 
 #top_banner
 	background-size: cover
@@ -195,36 +238,25 @@ b.heading
 						top: 17px
 						right: 25px
 
-@keyframes opac
-	0%
-		opacity: 0
-	100%
-		opacity: 1
-		
-						
-				
-
-.notif
-	max-width: max-content
-	display: flex
-	background-color: $light_accent
-	border-radius: 30px
-	padding: 10px 25px 
-	align-items: center
-	img
-		width: 16px
-		height: auto
-		margin-right: 7px
-	p
-		color: $accent
-	a
-		text-decoration: none
-		color: $accent
-		border-bottom: 1px solid $accent
-		transition: all .4s ease 
-		&:hover
-			color: darken($accent, 10%)
-			border-color: darken($accent, 10%)
+.mobile_menu
+	display: none
+	>.line
+		display: block
+		width: 24px
+		height: 3px
+		margin: 6px auto
+		background-color: $dark_accent
+		border-radius: 2px
+		transition: all .3s ease-in-out
+	&:hover
+		cursor: pointer
+	&.is-active .line
+		&:nth-child(1)
+			transform: translateY(9px) rotate(45deg)
+		&:nth-child(2)
+			opacity: 0
+		&:nth-child(3)
+			transform: translateY(-9px) rotate(-45deg)
 
 .main_banner 
 	padding: 240px 0 380px
@@ -250,6 +282,12 @@ section
 	padding: 100px 0 
 	&#top_banner
 		padding: 0
+
+.animate_graphic
+	animation: movingAn 1s infinite alternate
+//----------------------------------------------------------//
+
+//------------------------ADVANTAGES----------------------------//
 
 #advantages
 	.notif
@@ -289,6 +327,11 @@ section
 				font-size: 18px
 				color: $gray
 
+//----------------------------------------------------------//
+
+
+//----------------------INFORMATION-------------------------//
+
 section.information
 	.img-responsive
 		margin: 0 auto
@@ -300,10 +343,14 @@ section.information
 			font-weight: 900
 			line-height: 1.4
 			margin: 32px 0 16px
-			max-width: 352px
+			// max-width: 352px
 		>.descr	
 			color: $gray
 			font-size: 16px
+
+//----------------------------------------------------------//
+
+//------------------------REVIEWS---------------------------//
 
 #reviews
 	padding: 300px 0
@@ -352,6 +399,10 @@ section.information
 				transform: scale(1.1)
 			>img
 				margin: 0 auto
+
+//----------------------------------------------------------//
+
+//------------------------PRE-FOOTER---------------------------//
 
 #pre_footer
 	.pf_info
@@ -422,6 +473,10 @@ section.information
 					>a
 						color: #1563FF
 
+//----------------------------------------------------------//
+
+//------------------------FOOTER---------------------------//
+
 #footer
 	padding: 60px 0 0
 	background-color: #FBFCFF
@@ -459,8 +514,9 @@ section.information
 					align-items: center
 					justify-content: center
 					text-decoration: none
-					transition: transform .4s ease
-					&:hover
+					>img
+						transition: transform .4s ease
+					&:hover >img
 						transform: translateY(-8px)
 				&:last-child
 					margin-right: 0
@@ -521,6 +577,8 @@ section.information
 		font-size: 16px
 		color: $dark_accent
 		text-align: center
+
+//----------------------------------------------------------//
 
 
 
