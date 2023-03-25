@@ -29,9 +29,7 @@ $(function () {
 
   /*----------------------------*/
 
-  /*--------REVIEWS TABS--------*/
-
-  
+  /*--------YAKORI--------*/
 
   $('a.yakor').on('click', function (event) {
     var $anchor = $(this);
