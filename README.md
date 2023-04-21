@@ -9,4 +9,4 @@ Also added some animations during page scrolling using wow.js and CSS animations
 
 ## Check it here :point_down:
 
-[IMAGE CAROUSEL](https://saveliy113.github.io/Qubly/)
+[QUBLY](https://saveliy113.github.io/Qubly/)
